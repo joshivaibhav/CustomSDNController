@@ -8,9 +8,7 @@ Here I have implemeneted a custom controller that captures minimal features of t
 
 # Requirements
 
--> Mininet VM
--> Oracle VirtualBox (or any other VM)
--> Python3
+-> Mininet VM, Oracle VirtualBox (or any other VM), Python3
 
 
 # Code Files
@@ -32,7 +30,7 @@ Create a python file containing the custom topology of 5 switches linked togethe
 
 3) Start the topology and assign our SDN Controller as the remote controller using the following command : 
 
-      # sh sudo ovs-vsctl set-controller s1 tcp:127.0.0.1:6653
+      sh sudo ovs-vsctl set-controller s1 tcp:127.0.0.1:6653
 
 
 The above steps should do the job. After this, we capture the packet activity through WireShark and analyse the ECHO_REQUEST and ECHO_REPLIES.
